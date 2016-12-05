@@ -28,9 +28,12 @@ def main():
         print("\nBigram\n")
         print(paragraphtorap(model.bigram_generate()))
         print("\nTrigram\n")
-        print(paragraphtorap(model.trigram_generate()))
+        print(paragraphtorap(model.ngram_generate(3)))
+        print("\n4-gram\n")
+        print(paragraphtorap(model.ngram_generate(4)))
 
         # Start again
         artistname = input("Enter name of Artist: ")
 
-main()
+if __name__ == "__main__":
+    main()
