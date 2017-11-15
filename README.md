@@ -1,0 +1,2 @@
+# Rap-Lyric-Generator
+Given an artist, generates lyrics based on previous lyrics using a Markov chain. Uses an API to get lyrics and then trains a model based on them. Shortcomings: the API I ended up using doesn't give you all the lyrics, so there isn't a lot of data to work with. This also makes it really easy for the model to just reproduce existing lyrics, especially with higher-order n-grams.
